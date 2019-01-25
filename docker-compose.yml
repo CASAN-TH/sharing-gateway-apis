@@ -27,7 +27,7 @@ services:
     deploy:
       replicas: 1
 
-  create:
+  donates:
     image: cyberadvance/sharing-donate-api
     ports: 
       - "3002:3000"
