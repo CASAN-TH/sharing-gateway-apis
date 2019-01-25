@@ -34,5 +34,7 @@ services:
     depends_on:
       - db
       - auth
+    environment:
+      - MONGO_DB_URI=mongodb://db/donates
     deploy:
       replicas: 1
