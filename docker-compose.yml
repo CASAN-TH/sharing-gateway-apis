@@ -38,3 +38,15 @@ services:
       - MONGO_DB_URI=mongodb://db/donates
     deploy:
       replicas: 1
+
+  points:
+    image: cyberadvance/users-point-api
+    ports: 
+      - "3003:3000"
+    depends_on:
+      - db
+      - auth
+    environment:
+      - MONGO_DB_URI=mongodb://db/donates
+    deploy:
+      replicas: 1
