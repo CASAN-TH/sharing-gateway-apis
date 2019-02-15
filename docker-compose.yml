@@ -47,6 +47,6 @@ services:
       - db
       - auth
     environment:
-      - MONGO_DB_URI=mongodb://db/donates
+      - MONGO_DB_URI=mongodb://db/points
     deploy:
       replicas: 1
